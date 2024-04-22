@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    text-decoration: none;
 }
 
 :root{
@@ -15,7 +16,6 @@
 }
 
 html, body{
-    height: 3000px;
     width: 100%;
     scroll-behavior: smooth;
 }
@@ -132,7 +132,11 @@ header .menu .menu-content a{
     color: var(--cordetexto-branca);
     padding: .5rem 3rem;
     transition: .3s;
-    border-radius: 5px;
+
+}
+
+.section-banner button a{
+    color: var(--cordetexto-branca);
 }
 
 .section-banner button:hover{
@@ -158,14 +162,15 @@ header .menu .menu-content a{
 
 .carrosel-noticias-topicos .topico{
     background-color: rgb(255, 255, 255);
-    height: 20rem;
-    width: 17rem;
+    height: 52vh;
+    width: 23%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top:  2rem;
     transition: .3s;
+    cursor: pointer;
 
 }
 
@@ -179,6 +184,11 @@ header .menu .menu-content a{
     padding-bottom: 1rem;
 }
 
+.carrosel-noticias-topicos .topicos .topico legend{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--header-background);
+}
 
 
 
