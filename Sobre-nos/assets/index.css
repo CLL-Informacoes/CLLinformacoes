@@ -45,3 +45,102 @@ body {
     cursor: pointer;
     background-color: #08131a;
 }
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 450px;
+    background-color: #1b3544;
+    position: relative;
+    top: 450px;
+}
+
+.geralheader {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px 0px 50px;
+}
+
+.info1Header {
+    display: flex;
+    position: relative;
+    top: 200px;
+    align-items: center;
+    justify-content: space-between;
+    width: 450px;
+    color: aliceblue;
+
+}
+
+
+
+.h2Header {
+    line-height: 0;
+}
+
+
+.line {
+    line-height: 0;
+}
+
+
+.info2Header {
+    position: relative;
+    top: 200px;
+    color: aliceblue;
+}
+
+.spanHeader {
+    width: 390px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#inc1:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    filter: invert(28%) sepia(94%) saturate(4646%) hue-rotate(354deg) brightness(93%) contrast(97%);
+}
+
+#inc2:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    filter: invert(100%) grayscale(100%);
+}
+
+#inc3:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    filter: invert(31%) sepia(90%) saturate(6372%) hue-rotate(346deg) brightness(92%) contrast(98%);
+}
+
+#inc4:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    filter: invert(100%) grayscale(100%);
+}
+
+.imgsocialHeader {
+    width: 50px;
+    ;
+}
+
+
+.ultHeader {
+    width: 100%;
+    height: 100px;
+    background-color: #27495C;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d4d4d4;
+    font-size: 20px;
+
+
+}
