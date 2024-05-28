@@ -2,6 +2,16 @@
     font-family: sans-serif;
 }
 
+.gerall {
+    position: relative;
+    margin: 0;
+    padding: 150px;
+    overflow: hidden;
+    text-align: justify;
+    font-size: 25px;
+
+}
+
 body {
     background-color: #d4d4d4;
 }
@@ -53,7 +63,6 @@ footer {
     height: 450px;
     background-color: #1b3544;
     position: relative;
-    top: 450px;
 }
 
 .geralheader {
@@ -142,5 +151,136 @@ footer {
     color: #d4d4d4;
     font-size: 20px;
 
+
+}
+
+/* conteúdo do header */
+
+
+
+
+.infopagina {
+    margin: 0;
+
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.group1,
+.group2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 5%;
+}
+
+.imggroup {
+    width: 600px;
+}
+
+.junt {
+    width: 50%;
+}
+
+.chat {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.chat1 {
+    padding: 20px;
+    width: 80px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 7px outset #27495C;
+    background-color: #27495C;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+
+}
+
+.chat1.collapsed {
+    width: 0;
+    overflow: hidden;
+}
+
+.iconchat {
+    width: 80px;
+
+}
+
+.iconchat1 {
+    background-color: #27495C;
+    width:80px;
+    display: none;
+}
+
+.puttxt {
+    display: none;
+    transition: .4s;
+
+}
+
+::placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #ffffff;
+}
+
+/* responsive */
+
+@media (max-width: 1580px) {
+    .imggroup {
+        width: 500px;
+    }
+    .chat{
+        justify-content: space-evenly;
+    }
+
+}
+
+@media (max-width: 1380px) {
+    .imggroup {
+        width: 400px;
+    }
+
+    .gerall {
+
+        font-size: 20px;
+
+    }
+
+}
+
+@media (max-width: 1150px) {
+
+    .group1,
+    .group2 {
+        display: block;
+
+    }
+
+    .container {
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+    }
+
+    .titlegroup {
+        text-align: center;
+    }
+
+   
 
 }
