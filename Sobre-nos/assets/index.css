@@ -2,6 +2,16 @@
     font-family: sans-serif;
 }
 
+.gerall {
+    position: relative;
+    margin: 0;
+    padding: 100px;
+    overflow: hidden;
+    text-align: justify;
+    font-size: 18px;
+
+}
+
 body {
     background-color: #d4d4d4;
 }
@@ -19,7 +29,7 @@ body {
 }
 
 .imgheader {
-    width: 5%;
+    width: 100px;
     margin: 0;
 }
 
@@ -41,7 +51,569 @@ body {
     transition: .5s;
 }
 
+.menuHamburguer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    display: none;
+}
+
+.menuHamburguer img {
+    width: 60px;
+}
+
 .liheader:hover {
     cursor: pointer;
     background-color: #08131a;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 350px;
+    background-color: #1b3544;
+    position: relative;
+}
+
+.geralheader {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px 0px 50px;
+}
+
+.info1Header {
+    display: flex;
+    position: relative;
+    top: 130px;
+    align-items: center;
+    justify-content: space-between;
+    width: 450px;
+    color: aliceblue;
+
+}
+
+
+
+.h2Header {
+    line-height: 0;
+}
+
+
+.line {
+    line-height: 0;
+}
+
+
+.info2Header {
+    position: relative;
+    top: 130px;
+    color: aliceblue;
+}
+
+.spanHeader {
+    width: 390px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#inc1:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    filter: invert(28%) sepia(94%) saturate(4646%) hue-rotate(354deg) brightness(93%) contrast(97%);
+}
+
+#inc2:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    filter: invert(100%) grayscale(100%);
+}
+
+#inc3:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    filter: invert(31%) sepia(90%) saturate(6372%) hue-rotate(346deg) brightness(92%) contrast(98%);
+}
+
+#inc4:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    filter: invert(100%) grayscale(100%);
+}
+
+.imgsocialHeader {
+    width: 40px;
+    ;
+}
+
+
+.ultHeader {
+    width: 100%;
+    height: 70px;
+    background-color: #27495C;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d4d4d4;
+    font-size: 20px;
+
+
+}
+
+/* conteúdo do header */
+
+
+
+
+.infopagina {
+    margin: 0;
+
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.group1,
+.group2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 5%;
+}
+
+.imggroup {
+    width: 350px;
+}
+
+.junt {
+    width: 50%;
+}
+
+.chat {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.chat1 {
+    padding: 10px;
+    border: 7px outset #27495C;
+    background-color: #27495C;
+    cursor: pointer;
+    z-index: 9999;
+
+}
+
+.inn {
+    display: flex;
+    z-index: 999;
+}
+
+#popup {
+    position: relative;
+    width: 500px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: none;
+
+}
+
+#feedbackText {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.enviar,
+.fechat {
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #27495C;
+    color: #fff;
+    border: outset 2px #122938;
+    cursor: pointer;
+    z-index: 9;
+}
+
+
+/* menu popup */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: flex-end;
+
+}
+
+.popup {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    height: 370px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    top: 80px;
+}
+
+.menucard {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    height: 200px;
+
+
+}
+
+.option {
+    background-color: #122938;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+}
+
+.aop {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* responsive */
+
+@media (max-width: 1600px) {
+    .imggroup {
+        width: 350px;
+    }
+
+    .chat {
+        justify-content: space;
+    }
+
+
+    .iconchat {
+        width: 50px;
+    }
+}
+
+@media (max-width: 1380px) {
+    .imggroup {
+        width: 400px;
+    }
+
+    .gerall {
+
+        font-size: 20px;
+
+    }
+
+    .puttxt {
+        width: 180px;
+        font-size: 18px;
+    }
+
+    .iconchat {
+        width: 40px;
+    }
+
+}
+
+@media (max-width: 1150px) {
+
+    .group1,
+    .group2 {
+        display: block;
+
+    }
+
+    .container {
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+    }
+
+    .titlegroup {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 1220px) {
+
+    .puttxt {
+        width: 150px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width:1000px) {
+    .imgsocialHeader {
+        width: 40px;
+    }
+
+    .logoheader {
+        width: 150px;
+        margin-right: 15px;
+    }
+
+    .info1Header {
+        width: 40%;
+    }
+
+    .gerall {
+        padding: 40px;
+    }
+
+
+
+}
+
+@media (max-width: 960px) {
+    .logoheader {
+        width: 100PX;
+    }
+
+    .h2Header {
+        font-size: 18px;
+    }
+
+    .pHeader {
+        font-size: 15px;
+    }
+
+    .line {
+        font-size: 15px;
+    }
+
+    .puttxt {
+        width: 140px;
+        font-size: 14px;
+    }
+
+    .iconchat {
+        width: 30px;
+    }
+
+    .geralheader {
+        align-items: center;
+        height: 300px;
+        padding: 20px;
+    }
+
+    .info1Header,
+    .info2Header {
+        top: 30px;
+    }
+
+    .gerall {
+        padding: 70px;
+    }
+
+    .spanHeader {
+        width: 350px;
+        justify-content: flex-end;
+    }
+
+    .p2Header {
+        width: 350px;
+        font-size: 14PX;
+
+    }
+
+    .imgsocialHeader {
+        width: 25PX;
+        margin-left: 40PX;
+
+    }
+}
+
+@media (max-width: 700px) {
+    .gerall {
+        padding: 30px;
+    }
+
+    .imggroup {
+        width: 300px;
+    }
+
+    .info1Header {
+        top: -100px;
+    }
+
+}
+
+@media (max-width:800px) {
+    .liheader {
+        display: none;
+
+    }
+
+    .menuHamburguer {
+        display: block;
+    }
+
+    .headerinicio {
+        padding: 0px 10px 0px 70px;
+    }
+
+
+}
+
+@media (max-width:600px) {
+    .geralheader {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .spanHeader {
+        justify-content: space-between;
+        width: 350px
+    }
+
+    .info1Header {
+        top: 0;
+        right: 25px;
+    }
+
+    .imgheader {
+        width: 70px;
+    }
+
+    .menuHamburguer img {
+        width: 40px;
+    }
+
+    .headerinicio {
+        height: 60px;
+    }
+
+    .popup {
+        top: 60px;
+    }
+
+    #popup {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .menucard {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .option{
+        position: relative;
+        left: 40px;
+    }
+}
+
+
+@media (max-width:640px) {
+
+
+
+    .popup-overlay {
+        justify-content: center;
+    }
+
+    .option {
+        width: 80%;
+    }
+
+    .menucard {
+
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+
+
+}
+
+@media (max-width: 500px) {
+    .gerall {
+        padding: 30px;
+    }
+
+    .logoheader {
+        width: 100px;
+        margin-right: 10px;
+    }
+
+    .h2Header {
+        font-size: 15PX;
+
+    }
+
+    .imgsocialHeader {
+        width: 27px;
+    }
+
+    .info1Header {
+        width: 40%;
+        right: 50px;
+
+
+    }
+
+    .h1t,
+    .titlegroup,
+    .titleapoio {
+        font-size: 30px;
+    }
+
+    .spanHeader {
+        width: 350px;
+    }
+
+    .imggroup {
+        width: 300px;
+    }
+
+
+    .ultHeader {
+        height: 50px;
+    }
+
+
+    .ultpHeader {
+        font-size: 12px;
+    }
+
+    .enviar,
+    .fechat {
+        font-size: 12px;
+    }
+
+    #popup {
+        position: relative;
+        width: 200px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 20px;
+        display: none;
+
+    }
 }
