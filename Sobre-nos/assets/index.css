@@ -29,7 +29,7 @@ body {
 }
 
 .imgheader {
-    width: 5%;
+    width: 100px;
     margin: 0;
 }
 
@@ -49,6 +49,18 @@ body {
     margin: 0px 10px 0px 30px;
     padding: 0px 25px 0px 25px;
     transition: .5s;
+}
+
+.menuHamburguer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    display: none;
+}
+
+.menuHamburguer img {
+    width: 60px;
 }
 
 .liheader:hover {
@@ -233,6 +245,58 @@ footer {
 }
 
 
+/* menu popup */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: flex-end;
+
+}
+
+.popup {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    height: 370px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    top: 80px;
+}
+
+.menucard {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    height: 200px;
+
+
+}
+
+.option {
+    background-color: #122938;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+}
+
+.aop {
+    text-decoration: none;
+    color: #fff;
+}
+
+
 /* responsive */
 
 @media (max-width: 1600px) {
@@ -300,10 +364,6 @@ footer {
     }
 }
 
-.iconchat {
-    width: 40px;
-}
-
 @media (max-width:1000px) {
     .imgsocialHeader {
         width: 40px;
@@ -321,6 +381,8 @@ footer {
     .gerall {
         padding: 40px;
     }
+
+
 
 }
 
@@ -398,6 +460,23 @@ footer {
 
 }
 
+@media (max-width:800px) {
+    .liheader {
+        display: none;
+
+    }
+
+    .menuHamburguer {
+        display: block;
+    }
+
+    .headerinicio {
+        padding: 0px 10px 0px 70px;
+    }
+
+
+}
+
 @media (max-width:600px) {
     .geralheader {
         flex-direction: column;
@@ -413,7 +492,63 @@ footer {
 
     .info1Header {
         top: 0;
+        right: 25px;
     }
+
+    .imgheader {
+        width: 70px;
+    }
+
+    .menuHamburguer img {
+        width: 40px;
+    }
+
+    .headerinicio {
+        height: 60px;
+    }
+
+    .popup {
+        top: 60px;
+    }
+
+    #popup {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .menucard {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .option{
+        position: relative;
+        left: 40px;
+    }
+}
+
+
+@media (max-width:640px) {
+
+
+
+    .popup-overlay {
+        justify-content: center;
+    }
+
+    .option {
+        width: 80%;
+    }
+
+    .menucard {
+
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+
 
 }
 
@@ -438,6 +573,8 @@ footer {
 
     .info1Header {
         width: 40%;
+        right: 50px;
+
 
     }
 
@@ -455,52 +592,28 @@ footer {
         width: 300px;
     }
 
-    @media (max-width: 500px) {
-        .gerall {
-            padding: 30px;
-        }
 
-        .logoheader {
-            width: 100px;
-            margin-right: 10px;
-        }
-
-        .h2Header {
-            font-size: 15PX;
-
-        }
-
-        .imgsocialHeader {
-            width: 27px;
-        }
-
-        .info1Header {
-            width: 40%;
-
-        }
-
-        .h1t,
-        .titlegroup,
-        .titleapoio {
-            font-size: 30px;
-        }
-
-        .spanHeader {
-            width: 350px;
-        }
-
-        .imggroup {
-            width: 300px;
-        }
+    .ultHeader {
+        height: 50px;
+    }
 
 
-        .ultHeader {
-            height: 50px;
-        }
+    .ultpHeader {
+        font-size: 12px;
+    }
 
+    .enviar,
+    .fechat {
+        font-size: 12px;
+    }
 
-        .ultpHeader {
-            font-size: 12px;
-        }
+    #popup {
+        position: relative;
+        width: 200px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 20px;
+        display: none;
+
     }
 }

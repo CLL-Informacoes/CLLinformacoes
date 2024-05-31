@@ -23,6 +23,9 @@
             <li id="nonme" class="liheader">Social</li>
             <li id="nonme" class="liheader">Loja</li>
             <li id="nonme" class="liheader">Comunidade</li>
+            <li id="menuHamburguer" class="menuHamburguer"><img src="assets/menuHamburguer.svg" alt=""></li>
+
+
 
         </ul>
     </header>
@@ -94,20 +97,21 @@
             fornecendo conteúdo de qualidade e informação confiável para você.</p><br><br>
 
 
-            <div class="chat">
-                <div class="chat1" onclick="exibirPopup()" id="chat1">
-                    <img src="assets/chat.svg" alt="icone chat para feedback" class="iconchat" id="iconchat" style="display: block;">
-            
-                    <div id="popup" style="display: none;">
-                        <textarea id="feedbackText" rows="4" cols="50"></textarea><br>
-                        <span class="inn">
-                            <button class="enviar" onclick="enviarFeedback()">Enviar Feedback</button>
-                            <button class="fechat" onclick="fechar()" id="fechar">Fechar</button>
-                        </span>
-                    </div>
+        <div class="chat">
+            <div class="chat1" onclick="exibirPopup()" id="chat1">
+                <img src="assets/chat.svg" alt="icone chat para feedback" class="iconchat" id="iconchat"
+                    style="display: block;">
+
+                <div id="popup" style="display: none;">
+                    <textarea id="feedbackText" rows="4" cols="50"></textarea><br>
+                    <span class="inn">
+                        <button class="enviar" onclick="enviarFeedback()">Enviar Feedback</button>
+                        <button class="fechat" onclick="fechar()" id="fechar">Fechar</button>
+                    </span>
                 </div>
             </div>
-            
+        </div>
+
 
 
 
@@ -145,8 +149,33 @@
             </p>
         </div>
     </footer>
+
+
+    <div class="popup-overlay" id="popupOverlay" onclick="closePopup()">
+        <div class="popup" onclick="event.stopPropagation()">
+            <div class="menucard">
+                    <a class="aop" href="#">
+                        <div class="option">Home</div>
+                    </a>
+                    <a class="aop" href="#">
+                        <div class="option">Social</div>
+                    </a>
+                    <a class="aop" href="#">
+                        <div class="option">Loja</div>
+                    </a>
+                    <a class="aop" href="#">
+                        <div class="option">Comunidade</div>
+                    </a>
+            </div>
+
+        </div>
+    </div>
+
+
+
     <script src="index.js"></script>
     </div>
+
 
 
 
