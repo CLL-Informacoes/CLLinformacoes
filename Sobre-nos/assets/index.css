@@ -211,6 +211,10 @@ footer {
     cursor: pointer;
     z-index: 9999;
 
+
+}
+.iconchat{
+    width: 60px;
 }
 
 .inn {
