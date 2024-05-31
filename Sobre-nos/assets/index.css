@@ -203,6 +203,9 @@ footer {
     align-items: center;
     justify-content: flex-end;
 }
+.iconchat{
+    width: 60px;
+}
 
 .chat1 {
     padding: 10px;
