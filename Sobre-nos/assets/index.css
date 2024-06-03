@@ -169,7 +169,36 @@ footer {
 /* conteúdo do header */
 
 
+.chat {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
 
+
+.contato {
+    background-color: #122938;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: #08131a outset 11px;
+
+
+}
+.contato:hover{
+    border: #122938 outset 11px;
+}
+
+
+.iconchat {
+    width: 50px;
+
+}
 
 .infopagina {
     margin: 0;
@@ -198,33 +227,11 @@ footer {
     width: 50%;
 }
 
-.chat {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
 
-.chat1 {
-    padding: 10px;
-    border: 7px outset #27495C;
-    background-color: #27495C;
-    cursor: pointer;
-    z-index: 9999;
-
-
-}
-.iconchat{
-    width: 60px;
-}
-
-.inn {
-    display: flex;
-    z-index: 999;
-}
 
 #popup {
     position: relative;
-    width: 500px;
+    width: auto;
     background-color: #fff;
     border: 1px solid #ccc;
     padding: 20px;
@@ -237,16 +244,8 @@ footer {
     margin-bottom: 10px;
 }
 
-.enviar,
-.fechat {
-    margin-right: 10px;
-    padding: 10px 20px;
-    background-color: #27495C;
-    color: #fff;
-    border: outset 2px #122938;
-    cursor: pointer;
-    z-index: 9;
-}
+
+
 
 
 /* menu popup */
@@ -308,14 +307,6 @@ footer {
         width: 350px;
     }
 
-    .chat {
-        justify-content: space;
-    }
-
-
-    .iconchat {
-        width: 50px;
-    }
 }
 
 @media (max-width: 1380px) {
@@ -332,10 +323,6 @@ footer {
     .puttxt {
         width: 180px;
         font-size: 18px;
-    }
-
-    .iconchat {
-        width: 40px;
     }
 
 }
@@ -412,9 +399,6 @@ footer {
         font-size: 14px;
     }
 
-    .iconchat {
-        width: 30px;
-    }
 
     .geralheader {
         align-items: center;
@@ -526,7 +510,8 @@ footer {
         justify-content: center;
         text-align: center;
     }
-    .option{
+
+    .option {
         position: relative;
         left: 40px;
     }
@@ -606,14 +591,8 @@ footer {
         font-size: 12px;
     }
 
-    .enviar,
-    .fechat {
-        font-size: 12px;
-    }
-
     #popup {
         position: relative;
-        width: 200px;
         background-color: #fff;
         border: 1px solid #ccc;
         padding: 20px;
