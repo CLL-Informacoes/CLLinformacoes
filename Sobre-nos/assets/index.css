@@ -326,9 +326,8 @@ footer {
     font-size: 25px;
     animation: 1;
 }
-
-.option:hover {
-    background-image: linear-gradient(75deg, #1B3544, #BBBFC0, #0B1C25);
+.option:hover{
+    background-image: linear-gradient(75deg,#1B3544, #BBBFC0, #0B1C25);
     animation: 1s;
     color: #08131a;
 }
