@@ -19,10 +19,19 @@ function exibirPopup() {
 
 function openPopup() {
     document.getElementById("popupOverlay").style.display = "flex";
+    document.getElementById("zin").style.zIndex = "0";
+    document.getElementById("zin1").style.zIndex = "0";
+    document.getElementById("zin2").style.zIndex = "0";
+    document.getElementById("popupOverlay").style.zIndex = "10"
+
 }
 
 function closePopup() {
     document.getElementById("popupOverlay").style.display = "none";
+    document.getElementById("zin").style.zIndex = "10";
+    document.getElementById("zin1").style.zIndex = "10";
+    document.getElementById("zin2").style.zIndex = "10";
+
 }
 
 document.getElementById("menuHamburguer").addEventListener("click", openPopup);
