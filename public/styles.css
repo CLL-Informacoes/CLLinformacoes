@@ -45,14 +45,13 @@ header a, header{
 }
 
 header .logo{
-    height: 100%;
-    width: 15%;
-    background-color: #274659;
-    padding: 2;
-    font-size: 2rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 65%;
+    padding: 0 .60rem;
+}
+
+.header .logo img{
+    height: 100%;
 }
 
 header .menu{
@@ -86,7 +85,7 @@ header .menu .menu-content a{
     height: 86vh;
     width: 100%;
     overflow: hidden;
-    box-shadow: 0 0 25rem 10rem #92989c;
+    box-shadow: 0 0 25rem 20rem #c9cdcf;
 }   
 
 
@@ -107,14 +106,28 @@ header .menu .menu-content a{
 }
 
 .section-banner .img-wrapper{
-    opacity: .3;
+    opacity: 40%;
     height: 100%;
     width: 100%;
     object-fit: cover;
+    animation: zoomimagem 20s;
+}
+
+
+@keyframes zoomimagem{
+
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.2);
+    }
 }
 
 .section-banner .banner h1{
     font-size: 2.8rem;
+    animation: exibir_texto_banner 1s .2s forwards;
+    opacity: 0;
 }
 
 .section-banner .banner h1 span{
@@ -123,7 +136,10 @@ header .menu .menu-content a{
 
 .section-banner .banner p{
     font-size: 14px;
+    animation: exibir_texto_banner 1s .3s forwards;
+    opacity: 0;
 }
+
 
 .section-banner button{
     margin-top: 1rem;
@@ -132,7 +148,21 @@ header .menu .menu-content a{
     color: var(--cordetexto-branca);
     padding: .5rem 3rem;
     transition: .3s;
+    animation: exibir_texto_banner 1s .4s forwards;
+    opacity: 0;
 
+}
+
+@keyframes exibir_texto_banner{
+    0%{
+        transform: translateY( 20rem);
+
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .section-banner button a{
