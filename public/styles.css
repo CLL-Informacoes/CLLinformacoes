@@ -177,28 +177,28 @@ header .menu .menu-content a{
 /*topicos do site*/
 
 .carrosel-noticias-topicos{
+    position: relative;
     width: 100%;
+    margin: 2rem 0;
+    padding: 0 2rem;
+
 }
 
 .carrosel-noticias-topicos .topicos{
     flex-wrap: wrap;
-    top: 80%;
     width: 100%;
-    position: absolute;
     display: flex;
     justify-content: space-between;
-    padding: 4rem;
 }
 
 .carrosel-noticias-topicos .topico{
     background-color: rgb(255, 255, 255);
-    height: 52vh;
-    width: 23%;
+    height: 50vh;
+    width: 17.5vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top:  2rem;
     transition: .3s;
     cursor: pointer;
 
@@ -219,6 +219,54 @@ header .menu .menu-content a{
     font-weight: 600;
     color: var(--header-background);
 }
+
+/*destaques da semana*/
+
+.destaques-da-semana{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.destaques-content{
+    width: 95%;
+}
+
+.destaques-da-semana .noticias{
+    display: flex;
+    justify-content: space-between;
+    height: 15rem;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.destaques-da-semana .noticias .noticia{
+    background-color: var(--header-background);
+    height: 100%;
+    width: 49%;
+}
+
+.destaques-da-semana .noticias .noticia img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: .3s;
+
+}
+
+.noticia img:hover{
+    opacity: .8;
+}
+
+
+.destaques-content h2{
+    font-size: 1rem;
+}
+
+
 
 
 
