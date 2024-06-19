@@ -234,21 +234,22 @@ header .menu .menu-content a{
     width: 95%;
 }
 
-.destaques-da-semana .noticias{
+.destaques-da-semana .noticias-destaque{
     display: flex;
     justify-content: space-between;
-    height: 15rem;
+    height: 13.5rem;
     width: 100%;
     margin: 1rem 0;
 }
 
-.destaques-da-semana .noticias .noticia{
+.destaques-da-semana .noticias-destaque .noticias-destaque{
     background-color: var(--header-background);
     height: 100%;
     width: 49%;
 }
 
-.destaques-da-semana .noticias .noticia img{
+
+.destaques-da-semana .noticias-destaque .noticias-destaque img{
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -257,13 +258,60 @@ header .menu .menu-content a{
 
 }
 
-.noticia img:hover{
+.noticias-destaque img:hover{
     opacity: .8;
 }
 
 
 .destaques-content h2{
-    font-size: 1rem;
+    font-size: 1.3rem;
+}
+
+/*sessão principal de noticias*/
+
+.section-noticias{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: auto 2rem;
+    padding:  1rem 0;
+    color: var(--header-background);
+}
+
+
+.noticia{
+    display: flex;
+    padding: 1rem 0;
+}
+
+.noticia img{
+    object-fit: cover;
+    height: 30vh;
+    width: 30vw;
+    padding-right: 1rem;
+    margin-bottom: 1.5rem ;
+}
+
+.noticia legend{
+    width: 70%;
+    font-size: 14px;
+}
+
+.noticia p{
+    text-decoration: underline;
+}
+
+.noticia .noticia-txt h1{
+    font-size: 1.7rem;
+}
+
+.noticia:hover img{
+    cursor: pointer;
+}
+
+.anuncio img{
+
+width: 100%;
 }
 
 
