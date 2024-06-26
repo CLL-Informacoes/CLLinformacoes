@@ -227,6 +227,7 @@ header .menu .menu-content a{
     width: 100%;
     display: flex;
     justify-content: center;
+    margin: 2rem 0;
     
 }
 
@@ -289,7 +290,7 @@ header .menu .menu-content a{
     height: 30vh;
     width: 30vw;
     padding-right: 1rem;
-    margin-bottom: 1.5rem ;
+    margin-bottom: 2rem ;
 }
 
 .noticia legend{
@@ -314,6 +315,67 @@ header .menu .menu-content a{
 width: 100%;
 }
 
+/*navegação*/
+
+.section-nevegacao{
+    color: black;
+}
+
+/*footer*/
+
+footer{
+    margin-top: 2rem;
+    font-size: 15px;
+    color: var(--cordetexto-branca);
+    height: 100%;
+    width: 100%;
+    background-color: var(--header-background);
+    padding-top: 4rem;
+}
+
+
+footer .geralfooter{
+    width: 100%;
+    height: 90%;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.infofooterLogo{
+    display: flex;
+    align-items: center;
+}
+
+.infofooterIcon{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-around;
+}
+
+.infofooterIcon .icons{
+    font-size: 2rem;
+}
+
+.infofooterIcon .icons i{
+    padding-left: 1rem;
+}
+
+.infofooterLogo img{
+    width: 45%;
+    padding-right: 1rem;
+    
+}
+
+.footerBottom{
+    position: relative;
+    padding: 1.1rem;
+    background-color: #27495C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
