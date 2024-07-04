@@ -188,13 +188,14 @@ header .menu .menu-content a{
     flex-wrap: wrap;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .carrosel-noticias-topicos .topico{
     background-color: rgb(255, 255, 255);
     height: 50vh;
-    width: 17.5vw;
+    width: 18vw;
     display: flex;
     flex-direction: column;
     align-items: center;
