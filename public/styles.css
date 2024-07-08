@@ -1,11 +1,13 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Open Sans", sans-serif;
     text-decoration: none;
 }
 
@@ -142,15 +144,22 @@ header .menu .menu-content a{
 
 
 .section-banner button{
+    position: relative;
     margin-top: 1rem;
     border: none;
     background-color: var(--cor-roxo);
     color: var(--cordetexto-branca);
-    padding: .5rem 3rem;
+    height: 2rem;
+    width: 9.5rem;
     transition: .3s;
     animation: exibir_texto_banner 1s .4s forwards;
     opacity: 0;
+    overflow: hidden;
 
+}
+
+.section-banner .button{
+    background-color: var(--header-background);
 }
 
 @keyframes exibir_texto_banner{
@@ -165,13 +174,25 @@ header .menu .menu-content a{
     }
 }
 
-.section-banner button a{
-    color: var(--cordetexto-branca);
+.section-banner button .efecct{
+    position: absolute;
+    top: 0%;
+    background-color: #1B3544;
+    height: 100%;
+    width: 100%;
+    left: -100%;
+    opacity: 0;
+    transition: .3s;
 }
 
-.section-banner button:hover{
-    background-color: transparent;
-    box-shadow: inset 0 0 0 4px var(--cor-roxo);
+.section-banner button:hover .efecct{
+    z-index: -1;
+    left: 0%;
+    opacity: 1;
+}
+
+.section-banner button a{
+    color: var(--cordetexto-branca);
 }
 
 /*topicos do site*/
