@@ -387,6 +387,11 @@ footer .geralfooter{
 
 .infofooterIcon .icons i{
     padding-left: 1rem;
+    transition: .3s;
+}
+
+.infofooterIcon .icons i:hover{
+    color: var(--cor-roxo);
 }
 
 .infofooterLogo img{
