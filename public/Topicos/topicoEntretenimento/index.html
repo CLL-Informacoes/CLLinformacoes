@@ -4,36 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entretenimento</title>
+    <title>Economia</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="assets/index.css">
+    <link rel="stylesheet" href="/public/Topicos/topicoEconomia/assets/index.css">
+    <link rel="stylesheet" href="/public/styles.css">
 
 </head>
 
 <body>
-    <header class="headerinicio">
-        <img class="imgheader" src="assets/logo.svg" alt="logo-site">
-        <ul class="ulheader">
-            <li id="nonme" class="liheader">Home</li>
-            <li id="nonme" class="liheader">Social</li>
-            <li id="nonme" class="liheader">Loja</li>
-            <li id="nonme" class="liheader">Comunidade</li>
-            <li id="menuHamburguer" class="menuHamburguer"><img src="assets/menuHamburguer.svg" alt=""></li>
+    <header>
+        <a href="/public/index.html" class="logo">
+            <img src="/assets/logo.svg" alt="">
+        </a>
+        <ul class="menu">
+            <li class="menu-content"><a href="/public/index.html">Home</a></li>
+            <li class="menu-content"><a href="">Social</a></li>
+            <li class="menu-content"><a href="">Loja</a></li>
+            <li class="menu-content"><a href="">Comunidade</a></li>
+            
         </ul>
     </header>
     <div class="bannertopico">
-
-        <h1 id="zin" class="titletopico"><span style="color: #957ef9;">Ent</span>retenimento</h1>
-        <p id="zin1" class="infotopico">confira tudo sobre Entretenimento</p>
-
-        <button id="zin2" class="buttopico">
-            <div class="efectt"></div>
-            <p class="textbutton">Começar</p>
-        </button>
+        <img src="/public/Topicos/topicoEntretenimento/assets/bannerEntretenimento.svg alt="">
+        <div class="banner-text">
+            <h1 id="zin" class="titletopico"><span style="color: #957ef9;">Eco</span>nomia</h1>
+            <p id="zin1" class="infotopico">confira tudo sobre Economia</p>
+            <button id="zin2" class="buttopico">
+                <div class="efectt"></div>
+                <p class="textbutton">Começar</p>
+            </button>
+        </div>
 
         <div class="fundo"></div>
     </div><br><br>
@@ -42,62 +46,36 @@
 
 
 
-
-
-
-
     <footer>
-        <div class="geralheader">
+        <div class="geralfooter">
 
-            <div class="info1Header">
-
-                <img src="assets/logo.svg" alt="logo-site" class="logoheader">
+            <div class="infofooterLogo">
+                <img src="/assets/logo.svg" alt="logo-site" class="logoheader">
                 <div class="info11Headeer">
                     <h2 class="h2Header">Útimas notícias </h2>
-                    <p class="line">____________________</p>
-                    <p class="pHeader">Lateste News</p>
+                    <hr>
+                    <p class="pHeader">Latest news</p>
                 </div>
             </div>
 
-            <div class="info2Header">
-                <div class="spanHeader">
-                    <img id="inc1" src="assets/iconinsta.svg" alt="" class="imgsocialHeader">
-                    <img id="inc2" src="assets/icontiktok.svg" alt="" class="imgsocialHeader">
-                    <img id="inc3" src="assets/icongoogle+.svg" alt="" class="imgsocialHeader">
-                    <img id="inc4" src="assets/iconamazon.svg" alt="" class="imgsocialHeader">
+            <div class="infofooterIcon">
+                <div class="icons">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                    <i class="fa-brands fa-google-plus-g"></i>
+                    <i class="fa-brands fa-amazon"></i>
                 </div>
-                <p class="p2Header">Sobre Nós | Nos Ajute A Melhorar Deixe Seu Feedback</p>
+                <p class="p2Header">Sobre nós | Nos ajute a melhorar deixe seu feedback</p>
             </div>
 
         </div>
 
-        <div class="ultHeader">
-            <p class="ultpHeader">
+        <div class="footerBottom">
+            <p>
                 Copyrights &copy;2024 Comunicação Livre
             </p>
         </div>
     </footer>
-
-
-    <div class="popup-overlay" id="popupOverlay" onclick="closePopup()">
-        <div class="popup" onclick="event.stopPropagation()">
-            <div class="menucard">
-                <a class="aop" href="#">
-                    <div class="option">Home</div>
-                </a>
-                <a class="aop" href="#">
-                    <div class="option">Social</div>
-                </a>
-                <a class="aop" href="#">
-                    <div class="option">Loja</div>
-                </a>
-                <a class="aop" href="#">
-                    <div class="option">Comunidade</div>
-                </a>
-            </div>
-
-        </div>
-    </div>
     <script src="index.js"></script>
 </body>
 
