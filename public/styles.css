@@ -13,6 +13,7 @@
 
 :root{
     --header-background: #1B3544;
+    --header-hover:#0e1c24;
     --cordetexto-branca:rgb(226, 232, 243);
     --cor-roxo: rgb(149, 126, 249);
 }
@@ -33,7 +34,7 @@ header{
     position: fixed;
     left: 0;
     top: 0;
-    height: 10vh;
+    height: 9vh;
     width: 100%;
     background-color: var(--header-background);
     display: flex;
@@ -57,25 +58,29 @@ header .logo{
 }
 
 header .menu{
+    height: 100%;
     display: flex;
     font-size: 14px;
 }
 
 header .menu .menu-content{
+    height: 100%;
     list-style: none;
-    padding: 0 .8rem;
 }
 
 header .menu .menu-content a{
+    display: flex;
+    align-items: center;
+    height: 100%;
     text-decoration: none;
     transition: .3s;
+    padding: 0 .8rem;
 
 }
 
-.menu-content a:hover{
-    color: var(--cor-roxo);
+header .menu .menu-content a:hover{
+    background-color: var(--header-hover);
 }
-
 
 /*banner*/
 
@@ -83,8 +88,8 @@ header .menu .menu-content a{
 .section-banner{
     background-color: var(--header-background);
     position: relative;
-    top: 10vh;
-    height: 86vh;
+    top: 9vh;
+    height: 91vh;
     width: 100%;
     overflow: hidden;
     box-shadow: 0 0 25rem 20rem #c9cdcf;
@@ -155,6 +160,7 @@ header .menu .menu-content a{
     animation: exibir_texto_banner 1s .4s forwards;
     opacity: 0;
     overflow: hidden;
+    cursor: pointer;
 
 }
 
@@ -189,10 +195,6 @@ header .menu .menu-content a{
     z-index: -1;
     left: 0%;
     opacity: 1;
-}
-
-.section-banner button a{
-    color: var(--cordetexto-branca);
 }
 
 /*topicos do site*/
@@ -236,7 +238,7 @@ header .menu .menu-content a{
 
 .carrosel-noticias-topicos .topicos .topico i{
     color: var(--cor-roxo);
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding-bottom: 1rem;
 }
 
@@ -381,7 +383,7 @@ footer .geralfooter{
 }
 
 .infofooterIcon .icons{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .infofooterIcon .icons i{
