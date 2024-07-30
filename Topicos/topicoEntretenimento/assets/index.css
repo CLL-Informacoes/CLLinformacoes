@@ -126,11 +126,11 @@
 }
 
 .buttopico:hover {
- .efectt{
-    left: 0;
-    transition:.5s;
- }
-  
+    .efectt {
+        left: 0;
+        transition: .5s;
+    }
+
 }
 
 .fundo {
@@ -144,7 +144,40 @@
 
 
 
+.caixainf {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
 
+.imgApresent {
+    margin: 2rem;
+}
+
+.imgApresent img {
+    width: 25rem;
+}
+
+.informn {
+    width: 100%;
+    position: relative;
+    top: 1rem;
+}
+
+
+.linh {
+    border: none;
+    height: 2px;
+    margin: 2rem 0;
+    background-color: #444444;
+    width: 80%;
+}
+
+
+a {
+    text-decoration: none; 
+    color: inherit;   
+}
 
 
 
@@ -490,10 +523,12 @@ footer {
     .info1Header {
         top: -100px;
     }
-    .titletopico{
+
+    .titletopico {
         font-size: 2.5rem;
     }
-    .infotopico{
+
+    .infotopico {
         font-size: 1.1rem;
     }
 }
