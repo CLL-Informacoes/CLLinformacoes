@@ -10,7 +10,7 @@
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="assets/index.css">
+    <link rel="stylesheet" href="../index.css">
 
 </head>
 
@@ -25,7 +25,16 @@
             <li id="menuHamburguer" class="menuHamburguer"><img src="assets/menuHamburguer.svg" alt=""></li>
         </ul>
     </header>
-    <div class="bannertopico">
+    <div class="bannertopico" style="width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(assets/bannerEntretenimento.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;">
 
         <h1 id="zin" class="titletopico"><span style="color: #957ef9;">Ent</span>retenimento</h1>
         <p id="zin1" class="infotopico">confira tudo sobre Entretenimento</p>
@@ -40,22 +49,6 @@
 
 
 
-    <section>
-        
-             <a href=""><div class="caixainf">
-                <div class="imgApresent"><img src="../topicoEntretenimento/assets/ferrari-1211253_1280.jpg"
-                        alt="imagem de apresentação "> </div>
-
-               <div class="informn">
-                    <p class="informacoesConteudo">Aqui está as informações do conteúdo</p>
-                    <h2 class="titleConteudo">Aqui é o titulo do conteudo</h3>
-                        <p class="horaData">Há 2h no jornal de pernambucoconteudo</p>
-                </div>
-            </div>
-        </a>
-        <hr class="linh">
-
-    </section>
 
 
 
@@ -66,7 +59,7 @@
 
             <div class="info1Header">
 
-                <img src="assets/logo.svg" alt="logo-site" class="logoheader">
+                <img src="assets/logo.svg" alt="logo-site" class="logoFooter">
                 <div class="info11Headeer">
                     <h2 class="h2Header">Útimas notícias </h2>
                     <p class="line">____________________</p>
@@ -86,13 +79,13 @@
 
         </div>
 
-        <div class="ultHeader">
-            <p class="ultpHeader">
-                Copyrights &copy;2024 Comunicação Livre
-            </p>
-        </div>
-    </footer>
 
+    </footer>
+    <div class="ultHeader">
+        <p class="ultpHeader">
+            Copyrights &copy;2024 Comunicação Livre
+        </p>
+    </div>
 
     <div class="popup-overlay" id="popupOverlay" onclick="closePopup()">
         <div class="popup" onclick="event.stopPropagation()">
