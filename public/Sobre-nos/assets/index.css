@@ -1,6 +1,9 @@
 * {
     font-family: sans-serif;
 }
+html{
+scroll-behavior: smooth;
+}
 
 .gerall {
     position: relative;
@@ -8,7 +11,7 @@
     padding: 100px;
     overflow: hidden;
     text-align: justify;
-    font-size: 18px;
+    font-size: 15px;
 
 }
 
@@ -25,6 +28,7 @@ body {
     overflow: hidden;
     padding: 0px 100px 0px 60px;
     background-color: #1b3544;
+  
 
 }
 
@@ -41,6 +45,11 @@ body {
     font-size: 20px;
 }
 
+.ulheader a{
+    text-decoration: none;
+color: #BBBFC0;
+}
+
 .liheader {
     display: flex;
     align-items: center;
@@ -48,7 +57,7 @@ body {
     height: 90px;
     margin: 0px 10px 0px 30px;
     padding: 0px 25px 0px 25px;
-    transition: .5s;
+   
 }
 
 .menuHamburguer {
@@ -582,6 +591,8 @@ footer {
 @media (max-width: 500px) {
     .gerall {
         padding: 30px;
+        font-size: 15px;
+        text-align: none;
     }
 
     .logoheader {
